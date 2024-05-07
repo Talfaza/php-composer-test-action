@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     
     container:
-      image: composer-latest
+      image: composer:latest
       volumes:
         - myapp:app
     steps:
