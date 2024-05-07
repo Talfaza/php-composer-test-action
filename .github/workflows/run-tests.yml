@@ -10,7 +10,7 @@ jobs:
     container:
       image: composer:latest
       volumes:
-        - myapp:app
+        - myapp:/app
     steps:
       - name: Run composer 
         run: composer instamm
