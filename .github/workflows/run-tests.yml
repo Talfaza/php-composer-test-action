@@ -13,6 +13,6 @@ jobs:
         - myapp:/app
     steps:
       - name: Run composer 
-        run: composer instamm
+        run: composer install
       - name: Run php Unit
         run: ./vendor/bin/phpunit test #test direcoty in this project
