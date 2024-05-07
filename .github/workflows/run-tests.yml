@@ -10,8 +10,10 @@ jobs:
     container:
       image: composer:latest
       volumes:
-        - myapp:/app
+        - ${{ github.workspace }}:/app
     steps:
+      - name: Checkout using github action
+        uses: actions/checkout@v2
       - name: Run composer 
         run: composer install
       - name: Run php Unit
